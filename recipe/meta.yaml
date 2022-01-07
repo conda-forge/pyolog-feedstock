@@ -12,7 +12,7 @@ source:
     - 0001-Fix-defaults-for-username.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - olog = pyOlog.cli:main
@@ -21,10 +21,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.6
     - pip
   run:
-    - python >=3.7
+    - python >=3.6
     - ipython
     - keyring
     - requests
