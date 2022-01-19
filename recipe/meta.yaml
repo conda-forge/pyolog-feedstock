@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c31051f9cd32fbba4f00acd4637c1344ad4facc3d8c165e1b8324486270ba7ef
-  patches:
-    - 0001-Fix-defaults-for-username.patch
 
 build:
   number: 0
