@@ -1,16 +1,16 @@
 {% set name = "pyOlog" %}
-{% set version = "4.5.0" %}
+{% set version = "4.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c31051f9cd32fbba4f00acd4637c1344ad4facc3d8c165e1b8324486270ba7ef
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: 51be7f995e6e30bc36926fb1a262c61a7b845f6aa22cf075ef94cdad099130b8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - olog = pyOlog.cli:main
